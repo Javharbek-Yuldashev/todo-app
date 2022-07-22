@@ -1,0 +1,39 @@
+h1 {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.container {
+  display: flex;
+  align-items: flex-start;
+  gap: 50px;
+
+  font-size: 18px;
+
+  .todo {
+    flex: 2;
+
+    .card-header {
+      background: #FFFBBE;
+      font-size: 24px;
+      font-weight: 600;
+    }
+  }
+
+  .completed {
+    flex: 1;
+
+    .card-header {
+      background: #BEE5D3;
+      font-size: 24px;
+      font-weight: 600;
+    }
+  }
+
+  li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+  }
+}
