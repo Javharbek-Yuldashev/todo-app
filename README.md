@@ -1,3 +1,3 @@
 # Todo App
 
-Thttps://todo-react-apps.netlify.app/
+https://todo-react-apps.netlify.app/
