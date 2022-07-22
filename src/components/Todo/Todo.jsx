@@ -10,8 +10,8 @@ class Todo extends Component {
     ],
   };
 
-  handleDelete = (ind) => {
-    const updatedTasks = this.state.tasks.filter((t, i) => i !== ind);
+  handleDelete = (index) => {
+    const updatedTasks = this.state.tasks.filter((t, i) => i !== index);
     this.setState((this.state.tasks = updatedTasks));
   };
 
@@ -27,9 +27,9 @@ class Todo extends Component {
     }
   };
 
-  handleComplete = (task, ind) => {
+  handleComplete = (task, index) => {
     this.props.onComplete(task);
-    this.handleDelete(ind);
+    this.handleDelete(index);
   };
 
   render() {
@@ -37,19 +37,19 @@ class Todo extends Component {
       <div className="card todo">
         <div className="card-header">Todo List</div>
         <ul className="list-group list-group-flush">
-          {this.state.tasks.map((task, ind) => (
+          {this.state.tasks.map((task, index) => (
             <li className="list-group-item" key={task}>
               <p>{task}</p>
               <div className="btns">
                 <button
                   className="btn btn-success me-3"
-                  onClick={() => this.handleComplete(task, ind)}
+                  onClick={() => this.handleComplete(task, index)}
                 >
                   Complete
                 </button>
                 <button
                   className="btn btn-danger"
-                  onClick={() => this.handleDelete(ind)}
+                  onClick={() => this.handleDelete(index)}
                 >
                   Delete
                 </button>
@@ -59,7 +59,6 @@ class Todo extends Component {
           <li className="list-group-item">
             <input
               type="text"
-              value={this.state.newTask}
               className="form-control py-2"
               placeholder="Enter a task"
               onKeyDown={this.handleAdd}

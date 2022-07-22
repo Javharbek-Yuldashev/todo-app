@@ -11,7 +11,7 @@ class Completed extends Component {
           {this.props.tasks.map((t) => (
             <li className="list-group-item" key={t}>
               <span>{t}</span>
-              <i class="fa-solid fa-check"></i>
+              <i className="fa-solid fa-check"></i>
             </li>
           ))}
         </ul>

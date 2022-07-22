@@ -7,16 +7,18 @@ h1 {
   display: flex;
   align-items: flex-start;
   gap: 50px;
-
   font-size: 18px;
+
+  .card-header {
+    font-size: 24px;
+    font-weight: 600;
+  }
 
   .todo {
     flex: 2;
 
     .card-header {
-      background: #FFFBBE;
-      font-size: 24px;
-      font-weight: 600;
+      background: #fffbbe;
     }
   }
 
@@ -24,9 +26,7 @@ h1 {
     flex: 1;
 
     .card-header {
-      background: #BEE5D3;
-      font-size: 24px;
-      font-weight: 600;
+      background: #bee5d3;
     }
   }
 
