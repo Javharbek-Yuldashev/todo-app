@@ -12,7 +12,7 @@ class App extends Component {
     completedTasks: ["Learn about react", "Use react hooks"]
   }
 
-  handleFindComplete = (task) => {
+  handleComplete = (task) => {
     const newTasks = this.state.completedTasks;
     newTasks.push(task)
 
@@ -24,7 +24,7 @@ class App extends Component {
       <>
         <h1>Todo App</h1>
         <div className="container">
-          <Todo find={this.handleFindComplete}/>
+          <Todo onComplete={this.handleComplete}/>
           <Completed tasks={this.state.completedTasks}/>
         </div>
       </>

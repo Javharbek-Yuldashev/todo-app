@@ -28,7 +28,7 @@ class Todo extends Component {
   };
 
   handleComplete = (task, ind) => {
-    this.props.find(task);
+    this.props.onComplete(task);
     this.handleDelete(ind);
   };
 
