@@ -9,7 +9,7 @@ import Completed from "./components/Completed/Completed";
 class App extends Component {
 
   state = {
-    completedTasks: []
+    completedTasks: ["Learn about react", "Use react hooks"]
   }
 
   handleFindComplete = (task) => {

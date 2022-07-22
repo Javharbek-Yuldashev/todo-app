@@ -45,13 +45,13 @@ class Todo extends Component {
                   className="btn btn-success me-3"
                   onClick={() => this.handleComplete(task, ind)}
                 >
-                  Completed
+                  Complete
                 </button>
                 <button
                   className="btn btn-danger"
                   onClick={() => this.handleDelete(ind)}
                 >
-                  Deleted
+                  Delete
                 </button>
               </div>
             </li>
