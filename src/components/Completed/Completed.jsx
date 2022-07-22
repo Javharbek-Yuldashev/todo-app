@@ -8,9 +8,9 @@ class Completed extends Component {
       <div className="card completed">
         <div className="card-header">Completed</div>
         <ul className="list-group list-group-flush">
-          {this.props.tasks.map((t) => (
-            <li className="list-group-item" key={t}>
-              <span>{t}</span>
+          {this.props.tasks.map((task) => (
+            <li className="list-group-item" key={task.id}>
+              <span>{task.title}</span>
               <i className="fa-solid fa-check"></i>
             </li>
           ))}
